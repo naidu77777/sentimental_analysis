@@ -106,4 +106,4 @@ Make the necessary changes and test them thoroughly.
 Submit a pull request with a detailed explanation of your changes.
 Your contributions will help improve the functionality, usability, and overall quality of the project.
 
-This web application provides a great starting point for anyone interested in Natural Language Processing, Flask development, or building machine learning-powered tools. Feedback and suggestions are always welcome!
+This web application provides a great starting point for anyone interested in Natural Language Processing, Flask development, or building machine learning-powered tools. Feedback and suggestions are always welcome!!
