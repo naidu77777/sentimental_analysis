@@ -15,7 +15,7 @@ This project is a web application designed to perform sentiment analysis on rest
 
 To get started with this project, follow these steps:
 
-step 1: **Clone the repository**:
+*Step 1: **Clone the repository**:
     First, clone the project repository from GitHub using the following command:
 
     ```bash
@@ -23,12 +23,12 @@ step 1: **Clone the repository**:
     cd Sentimental_Analysis
     ```
 
-3. **Create a virtual environment**:
+Step 2: **Create a virtual environment**:
     ```bash
     python -m venv venv
     ```
 
-4. **Activate the virtual environment**:
+Step 3: **Activate the virtual environment**:
     - On Windows:
         ```bash
         venv\Scripts\activate
@@ -38,12 +38,12 @@ step 1: **Clone the repository**:
         source venv/bin/activate
         ```
 
-5. **Install the dependencies**:
+Step 4: **Install the dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
 
-6. **Download NLTK data**:
+Step 5: **Download NLTK data**:
     Open a Python shell and run the following commands:
     ```python
     import nltk
@@ -52,7 +52,7 @@ step 1: **Clone the repository**:
     nltk.download('wordnet')
     ```
 
-7. **Run the application**:
+Step 6: **Run the application**:
     ```bash
     python app.py
     ```
@@ -75,13 +75,22 @@ sentimental_Analysis_webapp/
 
 ├── templates/
 
-│ └── index.html
+│ └── start.html
 
 
-- **app.py**: The main Flask application file.
-- **sentiment_analysis.py**: Contains the preprocessing, training, and prediction logic.
-- **Reviews.csv**: The dataset used for training the sentiment analysis model.
-- **requirements.txt**: Lists all the dependencies required for the project.
+- **app.py**: This is the main application file that sets up and runs the Flask server. It handles user input, calls the sentiment analysis logic, and displays the results on the web interface.
+- **sentiment_analysis.py**: This script contains all the core logic for:
+
+Preprocessing the text data.
+Training the Logistic Regression model.
+Making predictions based on new reviews..
+- **Reviews.csv**: This CSV file contains the dataset of restaurant reviews used for training the sentiment analysis model. It includes labeled examples of positive and negative reviews.
+- **requirements.txt**: A list of all Python libraries required to run the application. These include:
+
+Flask
+NLTK
+Scikit-learn
+Pandas, etc.
 - **templates/index.html**: The HTML template for the web interface.
 
 ## Contributing
