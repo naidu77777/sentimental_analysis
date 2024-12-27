@@ -1,6 +1,8 @@
 # Sentimental Analysis Web Application
 
-This project is a web application for sentiment analysis of restaurant reviews. It uses a Logistic Regression model trained on a dataset of reviews to predict whether a review is positive or negative. The application is built using Flask.
+This project is a web application designed to perform sentiment analysis on restaurant reviews. It utilizes a Logistic Regression model that has been trained on a dataset of reviews to classify them as either positive or negative. The application is implemented using the Flask web framework, making it easy to set up and use as a lightweight, user-friendly interface for analyzing sentiment.
+
+
 
 ## Table of Contents
 
@@ -19,12 +21,12 @@ To get started with this project, follow these steps:
     cd Sentimental_Analysis
     ```
 
-2. **Create a virtual environment**:
+3. **Create a virtual environment**:
     ```bash
     python -m venv venv
     ```
 
-3. **Activate the virtual environment**:
+4. **Activate the virtual environment**:
     - On Windows:
         ```bash
         venv\Scripts\activate
@@ -34,12 +36,12 @@ To get started with this project, follow these steps:
         source venv/bin/activate
         ```
 
-4. **Install the dependencies**:
+5. **Install the dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
 
-5. **Download NLTK data**:
+6. **Download NLTK data**:
     Open a Python shell and run the following commands:
     ```python
     import nltk
@@ -48,7 +50,7 @@ To get started with this project, follow these steps:
     nltk.download('wordnet')
     ```
 
-6. **Run the application**:
+7. **Run the application**:
     ```bash
     python app.py
     ```
