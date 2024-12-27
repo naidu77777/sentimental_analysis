@@ -15,8 +15,8 @@ This project is a web application designed to perform sentiment analysis on rest
 
 To get started with this project, follow these steps:
 
-1. **Clone the repository**:
-  2. First, clone the project repository from GitHub using the following command:
+step 1: **Clone the repository**:
+    First, clone the project repository from GitHub using the following command:
 
     ```bash
     git clone https://github.com/Yash-030/Sentimental_Analysis.git
