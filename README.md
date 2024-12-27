@@ -15,7 +15,7 @@ This project is a web application designed to perform sentiment analysis on rest
 
 To get started with this project, follow these steps:
 
-#Step 1: **Clone the repository**:
+Step 1: **Clone the repository**:
     First, clone the project repository from GitHub using the following command:
 
     ```bash
