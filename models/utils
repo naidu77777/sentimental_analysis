@@ -1,0 +1,36 @@
+import re
+import string
+import nltk
+
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+
+# Download required resources safely
+def download_nltk_data():
+    resources = ['stopwords', 'punkt', 'wordnet', 'punkt_tab']
+    for res in resources:
+        try:
+            if res == 'punkt':
+                nltk.data.find('tokenizers/punkt')
+            elif res == 'punkt_tab':
+                nltk.data.find('tokenizers/punkt_tab/english.pickle')
+            else:
+                nltk.data.find(f'corpora/{res}')
+        except LookupError:
+            nltk.download(res)
+
+download_nltk_data()
+
+# Initialize preprocessing tools
+stop_words = set(stopwords.words('english'))
+lemmatizer = WordNetLemmatizer()
+
+def preprocess_text(text):
+    text = text.lower()
+    text = text.translate(str.maketrans('', '', string.punctuation))
+    text = re.sub(r'\d+', '', text)
+    tokens = word_tokenize(text)
+    tokens = [word for word in tokens if word not in stop_words]
+    tokens = [lemmatizer.lemmatize(word) for word in tokens]
+    return ' '.join(tokens)
